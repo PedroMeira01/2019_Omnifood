@@ -100,7 +100,7 @@ h3 {
     margin:0 auto;
 }
 
-.box {
+.box p {
     font-size: 90%;
     line-height: 145%;
 }
@@ -206,4 +206,33 @@ header {
 
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/* ---------------------------------
+             SECTION MEALS
+------------------------------------ */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.real-photos {
+    width: 100%;
+    margin: 0;
+}
+
+.real-photos  img {
+    width: 100%;
+    height: auto;
 }
