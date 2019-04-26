@@ -557,3 +557,40 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Small Phone */
+@media only screen and (max-width:480px) {
+
+}
+
+/* Small Phone to Small Tablets */
+@media only screen and (max-width:767px) {
+
+}
+
+/* Small Tablets to Big Tablets */
+@media only screen and (max-width:1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* Small Phone */
+@media only screen and (max-width:1200px) {
+    .hero-text-box {
+        width: 100%;
+    }
+
+    .row {
+        margin: 0 2% !important;
+    }
+}
