@@ -245,6 +245,20 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* MOBILE NAV */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* STICKY NAV */
 
 .sticky {
@@ -257,22 +271,19 @@ header {
     z-index: 9999;
     transition: .5s;
 }
-.sticky .main-nav li a:link, .sticky .main-nav li a:visited {
+
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+ .sticky .main-nav li a:visited {
     padding: 16px 0;
     color: #000;
 }
 
-.sticky .logo {
-    display: none;
-}
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
 
-.sticky .logo-black {
-    display: block;
-}
 
-.sticky .main-nav {
-    margin-top: 18px;
-}
 
 
 
@@ -619,13 +630,15 @@ footer p {
     animation-duration: 1s;
 }
 
+
+
 /* Small Phone */
 @media only screen and (max-width:480px) {
 
 }
 
 /* Small Phone to Small Tablets */
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     body {
         font-size: 16px;
     }
@@ -646,9 +659,29 @@ footer p {
         text-align: center;
     }
 
-    .main-nav {
+    /* .main-nav {
         display: none;
+    } */
+
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
     }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .mobile-nav-icon {display: inline-block;}
 
     h1 {
         font-size: 180%;
@@ -669,7 +702,16 @@ footer p {
     .plan-box div {
         margin-top: 20px;
     }
-}
+
+    .sticky .main-nav {margin-top: 10px;}
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    
+    .sticky .mobile-nav-icon i {color: #555;}
+    .sticky .mobile-nav-icon {margin-top: 10px;}
 
 /* Small Tablets to Big Tablets */
 @media only screen and (max-width:1023px) {
@@ -738,6 +780,7 @@ footer p {
     .hero-text-box {
         width: 100%;
         padding: 3%;
+        margin-top: 80px;
     }
 
     .row {

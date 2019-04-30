@@ -48,6 +48,14 @@ $(document).ready(function() {
                 offset:'80%'
             });
 
+            //MOBILE NAV
+            $('.js--nav-icon').click(function(){
+                var nav = $('.js--main-nav');
+                var icon = $('.js--nav-icon');
+
+                nav.slideToggle(200);
+            });
+
 
 });
 
