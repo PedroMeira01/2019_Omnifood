@@ -598,6 +598,27 @@ footer p {
     margin-top: 20px;
 }
 
+/* ---------------------------------
+            ANIMATIONS
+------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+    animation-duration: 1s;
+}
+
+.js--wp-4.animated {
+    animation-duration: 1s;
+}
+
 /* Small Phone */
 @media only screen and (max-width:480px) {
 
